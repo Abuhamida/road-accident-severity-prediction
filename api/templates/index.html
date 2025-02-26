@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🚨 Road Accidents Classification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F0EDCF] min-h-screen flex flex-col justify-between">
+    <!-- Header -->
+    <header class="bg-[#0B60B0] py-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <div class="flex items-center space-x-3">
+                <img src="/static/logo.png" alt="Logo" class="h-12 w-12 rounded-full shadow-md">
+                <h1 class="text-3xl font-bold text-white">Road Accidents Classification</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 text-white font-medium">
+                    <li><a href="#" class="hover:text-[#40A2D8] transition">Home</a></li>
+                    <li><a href="#" class="hover:text-[#40A2D8] transition">About</a></li>
+                    <li><a href="#" class="hover:text-[#40A2D8] transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <div class="bg-white shadow-2xl rounded-3xl p-12 w-full max-w-5xl mx-auto my-10 border-2 border-[#0B60B0]">
+            <h2 class="text-4xl font-extrabold text-center text-[#000000] mb-8">🚗 Road Accidents Classification</h2>
+            <form method="POST" action="/" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input class="input-field" type="number" name="num_vehicles" placeholder="Number of Vehicles" required>
+                <input class="input-field" type="number" name="time" placeholder="Time (24hr)" required>
+                <input class="input-field" type="text" name="road_class" placeholder="1st Road Class (e.g., A(M), A, B)" required>
+                <input class="input-field" type="text" name="road_surface" placeholder="Road Surface (e.g., Wet / Damp)" required>
+                <input class="input-field" type="text" name="lighting" placeholder="Lighting Conditions" required>
+                <input class="input-field" type="text" name="weather" placeholder="Weather Conditions" required>
+                <input class="input-field" type="text" name="casualty_severity" placeholder="Casualty Severity (e.g., Slight, Serious)" required>
+                <input class="input-field" type="text" name="sex_of_casualty" placeholder="Sex of Casualty (Male/Female)" required>
+                <input class="input-field" type="number" name="age_of_casualty" placeholder="Age of Casualty" required>
+                <input class="input-field" type="text" name="type_of_vehicle" placeholder="Type of Vehicle (e.g., Car, Bus)" required>
+                <input class="input-field" type="text" name="age_group" placeholder="Age Group (e.g., 60-69)" required>
+                <input class="input-field" type="text" name="vehicle_group" placeholder="Vehicle Group (e.g., Two-Wheeled Vehicle)" required>
+
+                <button type="submit" class="col-span-1 md:col-span-2 bg-[#40A2D8] hover:bg-[#0B60B0] text-white font-bold py-3 rounded-2xl transition duration-300 text-xl">
+                    Predict 🚀
+                </button>
+            </form>
+
+            {% if prediction is not none %}
+                <div class="bg-green-100 text-green-800 p-4 mt-6 rounded-xl text-center">
+                    <h2 class="text-2xl font-semibold">Prediction Result:</h2>
+                    <p class="text-lg">{{ prediction }}</p>
+                </div>
+            {% elif error %}
+                <div class="bg-red-100 text-red-800 p-4 mt-6 rounded-xl text-center">
+                    <h2 class="text-2xl font-semibold">Error:</h2>
+                    <p class="text-lg">{{ error }}</p>
+                </div>
+            {% endif %}
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#000000] text-white py-8">
+        <div class="container mx-auto text-center">
+            <p class="text-lg">&copy; 2025 Mohamed Ramdan AbuHamida. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://github.com/Abuhamida" target="_blank" class="hover:text-[#40A2D8] transition">GitHub</a>
+                <a href="https://www.linkedin.com/in/mohammed-abuhamida-969693220/" target="_blank" class="hover:text-[#40A2D8] transition">LinkedIn</a>
+                <a href="mailto:mohamedabuhamida3@gamil.com" class="hover:text-[#40A2D8] transition">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .input-field {
+            @apply border border-gray-300 rounded-2xl p-4 w-full bg-[#F0EDCF] placeholder-gray-500 text-[#000000] focus:outline-none focus:ring-4 focus:ring-[#40A2D8] shadow-sm;
+        }
+    </style>
+</body>
+</html>
