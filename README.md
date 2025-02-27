@@ -13,7 +13,7 @@ This project predicts the severity of road accidents based on various input feat
 
 ---
 
-## 📂 Project Structure
+## 💂️ Project Structure
 
 ```
 ├── app.py                 # Main Flask application
@@ -65,7 +65,7 @@ This project predicts the severity of road accidents based on various input feat
 
 ---
 
-## 🧪 Running Tests
+## 🤍 Running Tests
 
 Unit tests ensure the app works as expected:
 
@@ -77,22 +77,7 @@ Check the console output to ensure all tests pass successfully.
 
 ---
 
-## ⚙️ Model Details
-
-- **Algorithm:** Random Forest Classifier  
-- **Performance Metrics:**
-  - Accuracy: 60%
-  - Handles class imbalance using SMOTE
-- **Features Used:**
-  - Number of vehicles involved
-  - Time of accident
-  - Road conditions
-  - Weather conditions
-  - Casualty details (age, gender, severity)
-
----
-
-## 📝 Usage Guide
+## 💡 Usage Guide
 
 - Navigate to the homepage (`/`).
 - Fill in the form fields such as number of vehicles, time, road class, etc.
@@ -101,112 +86,23 @@ Check the console output to ensure all tests pass successfully.
 
 ---
 
-## 📖 Documentation
+## 🖼️ Screenshots
 
-### 📚 API Documentation
+### **Homepage Interface:**
+![Homepage Screenshot](images/home.jpeg)
 
-- **Endpoint:** `/`
-- **Method:** POST
-- **Request Body:** JSON
-  ```json
-  {
-            "num_vehicles": 2,
-            "time": 14,
-            "road_class": "A",
-            "road_surface": "Wet / Damp",
-            "lighting": "Darkness: street lights present and lit",
-            "weather": "Fine without high winds",
-            "casualty_severity": "Slight",
-            "sex_of_casualty": "Male",
-            "age_of_casualty": 35,
-            "type_of_vehicle": "Car",
-            "age_group": "60-69",
-            "vehicle_group": "Two-Wheeled Vehicle"
-        }
-  ```
-- **Response:**
-  ```json
-  {
-    "severity": "Driver"
-  }
-  ```
-
-### 📊 Model Performance Metrics
-
-- **Accuracy:** 60%
-- **Precision:** 60%
-- **Recall:** 99%
-- **F1-Score:** 75%
-- **Class Imbalance Handling:** SMOTE (Synthetic Minority Over-sampling Technique)
-
-### ⚙️ Setup Guide
-
-Follow the [Setup Instructions](#-setup-instructions) section to get the application up and running locally.
-
-### 🧪 Testing Results
-
-- All unit tests (`test_app.py`) passed successfully.
-- Test coverage: 95% of application code.
-- Key functionalities tested:
-  - API endpoint response validation.
-  - Model prediction consistency.
-  - Form data processing.
+### **Prediction Result:**
+![Prediction Screenshot](images/predict.jpeg)
 
 ---
 
-## 🎥 Demonstration
+## 💼 Documentation
 
-### 🖼️ Screenshots of Working API
-
-- **Homepage Interface:**
-  ![Homepage Screenshot](images/home.jpeg)
-
-- **Prediction Result:**
-  ![Prediction Screenshot](images/predict.jpeg)
-
-### 📬 Example Requests and Responses
-
-- **Request:**
-  ```bash
-  curl -X POST http://127.0.0.1:5000/ \
-    -H "Content-Type: application/json" \
-    -d '{
-            "num_vehicles": 2,
-            "time": 14,
-            "road_class": "A",
-            "road_surface": "Wet / Damp",
-            "lighting": "Darkness: street lights present and lit",
-            "weather": "Fine without high winds",
-            "casualty_severity": "Slight",
-            "sex_of_casualty": "Male",
-            "age_of_casualty": 35,
-            "type_of_vehicle": "Car",
-            "age_group": "60-69",
-            "vehicle_group": "Two-Wheeled Vehicle"
-        }'
-  ```
-
-- **Response:**
-  ```json
-  {
-    "prediction": "Driver"
-  }
-  ```
-
-### ✅ Test Results
-
-```bash
-----------------------------------------------------------------------
-Ran 3 tests in 0.046s
-
-OK
-```
-
-All unit tests passed without errors, confirming the application's stability and correctness.
+For detailed API documentation, model performance, setup guide, and test results, refer to the full **Documentation PDF**.
 
 ---
 
-## 💡 Troubleshooting
+## 🛠️ Troubleshooting
 
 - **App Not Starting?**
   - Ensure `best_model.pkl`, `label_encoders.pkl`, and `scaler.pkl` are present in the root directory.
@@ -230,7 +126,7 @@ Contributions are welcome! Here’s how you can help:
 
 ---
 
-## 📬 Contact
+## 💌 Contact
 
 - **Author:** Mohamed Ramdan AbuHamida
 - **GitHub:** [Abuhamida](https://github.com/Abuhamida)
@@ -239,5 +135,5 @@ Contributions are welcome! Here’s how you can help:
 
 ---
 
-✨ **Happy Coding!** 🚀
+🌟 **Happy Coding!** 🚀
 
