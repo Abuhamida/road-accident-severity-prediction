@@ -89,10 +89,10 @@ Check the console output to ensure all tests pass successfully.
 ## 🖼️ Screenshots
 
 ### **Homepage Interface:**
-![Homepage Screenshot](images/home.jpeg)
+![Homepage Screenshot](https://raw.githubusercontent.com/Abuhamida/road-accident-severity-prediction/main/images/home.jpeg)
 
 ### **Prediction Result:**
-![Prediction Screenshot](images/predict.jpeg)
+![Prediction Screenshot](https://raw.githubusercontent.com/Abuhamida/road-accident-severity-prediction/main/images/predict.jpeg)
 
 ---
 
