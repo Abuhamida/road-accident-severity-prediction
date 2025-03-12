@@ -126,14 +126,14 @@ Contributions are welcome! Here’s how you can help:
 
 ---
 
-## 💌 Contact
-
-- **Author:** Mohamed Ramdan AbuHamida
-- **GitHub:** [Abuhamida](https://github.com/Abuhamida)
-- **LinkedIn:** [Mohamed AbuHamida](https://www.linkedin.com/in/mohammed-abuhamida-969693220/)
-- **Email:** mohamedabuhamida3@gamil.com
+## 🤝 Connect with Me
+- 📧 **Email**: mohamedabuhamida3@gamil.com
+- 🌐 [**Portfolio**](https://mohamed-abuhamida.vercel.app/)
+- 💼 [**LinkedIn**](https://www.linkedin.com/in/mohammed-abuhamida-969693220/)
+- 🐙 [**GitHub**](https://github.com/Abuhamida)
 
 ---
 
-🌟 **Happy Coding!** 🚀
+> ⚡ *Feel free to contribute by creating issues or submitting pull requests to improve this project!* 🚀
+
 
